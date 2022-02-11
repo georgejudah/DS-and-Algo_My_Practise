@@ -1,0 +1,11 @@
+def largest(arr, n):
+    max = arr[1]
+    for i in range(0, n):
+
+        if arr[i] > max:
+            max = arr[i]
+    return max
+
+arr = [1,8, 7, 56, 90]
+n = len(arr)
+print(largest(arr, n))

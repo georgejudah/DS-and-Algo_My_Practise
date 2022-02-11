@@ -1,0 +1,17 @@
+nums = [555, 6666, 2323, 4444]
+
+
+def find_num_with_even_digits(arr):
+    count = 0
+    result = 0
+    for item in arr:
+        while (item > 0):
+            count = count + 1
+            item = item // 10
+        if count % 2 == 0:
+            result = result + 1
+        count = 0
+    return result
+
+
+print(find_num_with_even_digits(nums))
